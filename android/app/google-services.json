@@ -1,0 +1,707 @@
+{
+  "project_info": {
+    "project_number": "939404907095",
+    "firebase_url": "https://smartschool-4e14c.firebaseio.com",
+    "project_id": "smartschool-4e14c",
+    "storage_bucket": "smartschool-4e14c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:4ddbc206f965347b4dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.bpmhs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-q7vgmbd7ccu70q1gohkavjq0emafrhse.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.bpmhs",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:f7f83e3ab14a2c5c4dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.brightland"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-6r02fc7hplfb9pif4n7vn1b2ihorv3a9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.brightland",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:c372ec3c2fbc7bcc4dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.cambridge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-qo2im6f803tsamru677ff5br2c528c6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.cambridge",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:99ecee2bf9af6ec84dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.cambridgeacadmy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-dtpcdlb5kk311mh8ebtfnb6ivf8aa3gg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.cambridgeacadmy",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:5f5a7b5c1a4b118b4dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.euro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-ljap4k5nakmtg9pm3b7uvtme3n1bbag6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.euro",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:15968bd6ebdcd6854dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.eznext"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:8235d110ccb816904dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.filix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-imbbborndgov0hv340mpmkirklsd3muj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.filix",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:e3a10652ca3f9e774dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.igen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-okdnsin519js734e0ck1nrdvjok6pdha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.igen",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:260bc1759dad364a4dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.ima"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-3t7l8en61uhv8pj9gj7slg4jrpa2gfba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.ima",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:83e619f0c3d00cfc4dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.live_campus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-b4l3uhlt1v78b88th3utv5hknafgb80o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.live_campus",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:f6cfc36d52d4e8354dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.padarpan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-v9snlcmeab7gdggge5bi7t1m6m0v3kgu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.padarpan",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:781160957f6890dc4dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.scholars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-nfrtfg1sbujfm53q3uuvlofh5lp5rclm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.scholars",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:7344ff4cdf27bc904dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.smartdigital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-k97hbc6820sj8eo9a09prnuqbsdng88i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.smartdigital",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:fdf2ddfc146b28744dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.smartschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-rl3ilip7l5b5umolm9evniulr72bnd4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.smartschool",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:dc648d197c5d227f4dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.srcps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-u47iaqm2d77590jefh4pm7eu5crfsnvn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.srcps",
+            "certificate_hash": "436e9b3c373d763eab83ba152af452ebfc88f8de"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939404907095:android:c80cdbd6678ceaf94dc912",
+        "android_client_info": {
+          "package_name": "com.in30days.vijayschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939404907095-6e1pl673t9auniedadehf3k6k3jep91e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.in30days.vijayschool",
+            "certificate_hash": "493e90a914fc972c6fd51d3910e344e35c0689cb"
+          }
+        },
+        {
+          "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYzu8-YH8subEvA7lLzvrSpMDdSqU1_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939404907095-reb3kcb06ttvklv0kphf4h0m5cddpu8l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939404907095-5e23ubrbgs6s6fpjlthflcftd23ncbfn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.in30days.ima"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

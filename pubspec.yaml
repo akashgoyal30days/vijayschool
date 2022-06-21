@@ -1,0 +1,155 @@
+name: eznext
+description: A Product of 30Days Technologies Pvt Ltd
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  upgrader:
+  store_redirect: ^2.0.0
+  new_version:
+  cloud_firestore: ^0.16.0+1
+
+  platform: ^3.1.0
+
+  cupertino_icons: ^1.0.2
+  google_fonts:
+  http: ^0.12.1
+  toast: ^0.1.5
+  shared_preferences:
+  intl:
+  flutter_inappwebview: ^5.3.2
+
+  url_launcher:
+  toggle_switch: ^1.2.0
+  permission_handler: ^4.4.0+hotfix.2
+  flutter_html: ^0.11.1
+  countdown_flutter: ^0.1.2
+  flutter_fgbg: ^0.1.0
+  wakelock: ^0.5.6
+  flutter_phone_state: ^0.5.8
+  volume_control: ^0.1.5
+  just_audio:
+  audio_session:
+  uuid: ^2.0.4
+  #  flutter_downloader: ^1.7.0
+  downloads_path_provider_28: ^0.1.2
+  path_provider:
+  path: ^1.6.4
+  open_file: ^3.0.1
+  flutter_local_notifications: ^1.3.0
+  dio: ^3.0.9
+  modal_bottom_sheet: ^2.0.0
+  flutter_rating_bar: ^4.0.0
+  flutter_cupertino_date_picker: ^1.0.26+2
+  file_picker:
+  pdf_viewer_plugin: ^2.0.1
+  image_picker: ^0.6.7+21
+  pdf: ^2.1.0
+  flushbar: ^1.10.4
+  exif:
+  firebase_core:
+  firebase_messaging: ^8.0.0-dev.15
+  move_to_background: ^1.0.2
+  syncfusion_flutter_calendar:
+  change_app_package_name: ^0.1.3
+  overlay_support:
+  geolocator: ^5.3.2
+  google_maps_flutter: ^0.5.33
+  flutter_background: ^1.1.0
+  flutter_polyline_points: ^0.2.4
+  app_settings: ^4.1.6
+  flutter_downloader: ^1.7.4
+  flutter_launcher_icons: ^0.8.1
+  # flutter_google_maps: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/applogo.png"
+  image_path_android: "assets/applogo.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/dash_icons/
+    - assets/dash_icons/homework.png
+    - assets/dash_icons/timetable1.png
+    - assets/dash_icons/attendance.png
+    - assets/dash_icons/examination.png
+    - assets/dash_icons/oexam.png
+    - assets/dash_icons/downloadcenter.png
+    - assets/dash_icons/student.png
+    - assets/dash_icons/library.png
+    - assets/dash_icons/notice.png
+    - assets/dash_icons/leave.png
+    - assets/dash_icons/teacher.png
+    - assets/dash_icons/mydocs.png
+    - assets/dash_icons/cpass.png
+    - assets/dash_icons/transport.png
+    - assets/dash_icons/timeline.png
+    - assets/cardback.jpeg
+    - assets/background.jpg
+    - assets/home.png
+    - assets/fee.png
+    - assets/stud.png
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

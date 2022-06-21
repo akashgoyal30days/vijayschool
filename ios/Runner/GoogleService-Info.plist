@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>939404907095-qrkv1eneq69m2h72nr3nbejmt01s1ij6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.939404907095-qrkv1eneq69m2h72nr3nbejmt01s1ij6</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>939404907095-3t7l8en61uhv8pj9gj7slg4jrpa2gfba.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBvBxqPV0DXkfXJhuYTzojdcdOlF7PFrro</string>
+	<key>GCM_SENDER_ID</key>
+	<string>939404907095</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.in30days.vijayschool</string>
+	<key>PROJECT_ID</key>
+	<string>smartschool-4e14c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>smartschool-4e14c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:939404907095:ios:7ed29fe97a2b6f9a4dc912</string>
+	<key>DATABASE_URL</key>
+	<string>https://smartschool-4e14c.firebaseio.com</string>
+</dict>
+</plist>
