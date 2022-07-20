@@ -49,38 +49,29 @@ Future<void> _showNotification(String title, String body) async {
   await flutterLocalNotificationsPlugin.show(
       0,
       title != null ? title : Appname,
-      body, // notification id
+      body,
       platform,
       payload: body);
 }
 
-//---main initialiser---//
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SharedPreferencesInstance.initialize();
-  //--initialising firebase---//
   await Firebase.initializeApp();
 
-  //---geting os----//
   os = Platform.operatingSystem;
-  //debugPrint(os);
 
-  //---getting username----//
   SharedPreferences studentdetails = await SharedPreferences.getInstance();
   var username = studentdetails.getString('student_id');
   var role = studentdetails.getString('role');
-  //debugPrint(role);
   SharedPreferences oncecalled = await SharedPreferences.getInstance();
   oncecalled.remove("called");
-  //----saving firebasetoken---//
 
   messaging.getToken().then((token) {
     studentdetails.setString('fbasetoken', token);
   });
   devtoken = studentdetails.getString('fbasetoken');
-  //debugPrint(devtoken);
 
-  //---starting to get notification----//
   if (username != null) {
     if (role == null) {
       studentdetails.remove('student_id');
@@ -104,10 +95,7 @@ void main() async {
       provisional: true,
       sound: true,
     );
-    //debugPrint('User granted permission: ${settings.authorizationStatus}');
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
-      //debugPrint('sss');
-      //debugPrint('Message data: ${message.data['title']}');
       if (os == 'ios') {
         if (message.notification != null) {
           _showNotification(
@@ -134,7 +122,6 @@ void main() async {
         }
       }
       if (message.notification != null) {
-        //debugPrint('Message also contained a notification: ${message.notification}');
       }
     });
     FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
@@ -339,6 +326,6 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Center(
             child: Image.asset('assets/splash.png'),
           ),
-        ));
+        ));                                                 
   }
 }

@@ -6,6 +6,7 @@ import 'package:eznext/app_constants/popup.dart';
 import 'package:eznext/screen%20models/driver/driver_dashboard.dart';
 import 'package:eznext/screen%20models/parent/parent_dashboard_primary.dart';
 import 'package:eznext/screen%20models/schoolcode.dart';
+import 'package:eznext/services/sharedpreferences_instance.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
@@ -221,6 +222,10 @@ class _LoginState extends State<Login> {
                                   fontSize: 16, color: Colors.white),
                             ),
                             onPressed: () async {
+                              SharedPreferencesInstance.instance
+                                  .setString("user_consent", "false");
+                              // SharedPreferences
+                              //               .setString("user_consent", "false");
                               if (usernameController.text.isNotEmpty &&
                                   passwordController.text.isNotEmpty) {
                                 var uname = usernameController.text;
@@ -451,6 +456,7 @@ class _LoginState extends State<Login> {
                                             'route_id',
                                             rsp['record']['route_id']
                                                 .toString());
+
                                         Navigator.pushReplacement(
                                             context,
                                             CupertinoPageRoute(

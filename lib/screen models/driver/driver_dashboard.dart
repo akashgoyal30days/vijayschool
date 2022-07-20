@@ -4,7 +4,6 @@ import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:eznext/logoutmodel.dart';
-import 'package:eznext/main.dart';
 import 'package:eznext/services/sharedpreferences_instance.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_background/flutter_background.dart';
@@ -36,8 +35,123 @@ class _DriverDashboardState extends State<DriverDashboard> {
   @override
   void initState() {
     super.initState();
-    getLocationPermissionStatus();
     getAllRoutes();
+    getuserconsent();
+  }
+
+  getuserconsent() {
+    user_consent = SharedPreferencesInstance.instance.getString("user_consent");
+
+    Future.delayed(Duration(seconds: 1), () {
+      show_location_consent(context);
+    });
+  }
+
+  String user_consent = "false";
+
+  show_location_consent(BuildContext context) {
+    user_consent = SharedPreferencesInstance.instance.getString("user_consent");
+
+    AlertDialog alert = AlertDialog(
+      insetPadding: const EdgeInsets.symmetric(horizontal: 15),
+      title: const Text(
+        "Attention",
+        style: TextStyle(
+            color: Colors.blue, fontWeight: FontWeight.bold, fontSize: 20),
+      ),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text("By continuing to the app, you agree that: ",
+              style: TextStyle(
+                fontSize: 18,
+              )),
+          const SizedBox(height: 10),
+          RichText(
+              textAlign: TextAlign.justify,
+              text: const TextSpan(
+                  style: TextStyle(fontSize: 18, color: Colors.black),
+                  children: [
+                    TextSpan(
+                        text: "This app collects location data to enable the "),
+                    TextSpan(
+                        text: '"Bus Tracking Feature" ',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    TextSpan(
+                        text: "even when the app is closed or not in use. "),
+                    TextSpan(
+                        text: "The app tracks your location ",
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    TextSpan(text: "while"),
+                    TextSpan(
+                      text: " you are on your way to ",
+                    ),
+                    TextSpan(
+                        text: "Pick up or Drop off",
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    TextSpan(
+                      text: " the students. ",
+                    ),
+                    TextSpan(
+                      text: "To start the location tracking, Click on the ",
+                      // style: TextStyle(fontWeight: FontWeight.bold
+                      // )
+                    ),
+                    TextSpan(
+                        text: "START ",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, color: Colors.green)),
+                    TextSpan(text: "button "),
+                    TextSpan(
+                      text: " and to stop the location tracking, Click on the ",
+                      // style: TextStyle(fontWeight: FontWeight.bold)
+                    ),
+                    TextSpan(
+                        text: " STOP ",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, color: Colors.red)),
+                    TextSpan(
+                        text: " button or ",
+                        // style: TextStyle(fontWeight: FontWeight.bold)
+                        ),
+                    TextSpan(
+                        text: "LOGOUT ",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, color: Colors.blue)),
+                    TextSpan(text: "from the app."),
+                  ])),
+        ],
+      ),
+      actions: [
+        TextButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: const Text("Cancel"),
+          style: ButtonStyle(
+              foregroundColor: MaterialStateProperty.all(Colors.red)),
+        ),
+        TextButton(
+          onPressed: () {
+            Navigator.pop(context);
+            user_consent = "true";
+            getLocationPermissionStatus();
+          },
+          child: const Text("Agree & Continue"),
+          style: ButtonStyle(
+              foregroundColor: MaterialStateProperty.all(Colors.blue)),
+        ),
+      ],
+    );
+
+    showDialog(
+      barrierDismissible: false,
+      context: context,
+      builder: (BuildContext context) {
+        return alert;
+      },
+    );
   }
 
   getLocationPermissionStatus() async {
@@ -97,9 +211,9 @@ class _DriverDashboardState extends State<DriverDashboard> {
 
   Future<bool> backgroundServices() async => await FlutterBackground.initialize(
         androidConfig: FlutterBackgroundAndroidConfig(
-          notificationTitle: "Running in Background",
+          notificationTitle: "Location is being tracked",
           notificationImportance: AndroidNotificationImportance.Max,
-          notificationText: "Your Location is being updated in background",
+          notificationText: "Keep Your GPS Enabled",
         ),
       );
 
@@ -137,12 +251,20 @@ class _DriverDashboardState extends State<DriverDashboard> {
     locationStream =
         geoLocator.getPositionStream().listen(updateLocationOnFirebase);
     log("Done");
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        backgroundColor: Colors.green,
+        behavior: SnackBarBehavior.floating,
+        content: Text("Your location is being tracked")));
   }
 
   stopLocationTracking() async {
     setState(() {});
     await FlutterBackground.disableBackgroundExecution();
     await locationStream?.cancel();
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        backgroundColor: Colors.red,
+        behavior: SnackBarBehavior.floating,
+        content: Text("Your location tracking is stopped")));
   }
 
   updateLocationOnFirebase(Position position) async {
@@ -194,7 +316,14 @@ class _DriverDashboardState extends State<DriverDashboard> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      color: Colors.white.withOpacity(0.8),
+                      decoration: BoxDecoration(
+
+
+
+                                              color: Colors.white.withOpacity(0.8),
+                                              borderRadius: BorderRadius.circular(10)
+
+                      ),
                       padding: EdgeInsets.all(10),
                       margin: EdgeInsets.all(10),
                       child: Column(
@@ -202,14 +331,20 @@ class _DriverDashboardState extends State<DriverDashboard> {
                           Text(
                             "Your Current Route",
                             style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 17),
+                                fontWeight: FontWeight.w300, fontSize: 17),
                           ),
                           SizedBox(height: 10),
                           Text(
                             routeTitle,
-                            style: TextStyle(fontSize: 18),
+                            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                           ),
-                          TextButton(
+                          SizedBox(
+                            height: 10,
+                          ),
+                          FlatButton(
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                            textColor: Colors.white,
+                            color: Colors.blue,
                               onPressed: trackingLocation
                                   ? null
                                   : () async {
@@ -234,7 +369,7 @@ class _DriverDashboardState extends State<DriverDashboard> {
                           Divider(),
                           showLoading
                               ? CircularProgressIndicator()
-                              : GestureDetector(
+                              : InkWell(
                                   onTap: () async {
                                     ScaffoldMessenger.of(context)
                                         .clearSnackBars();
@@ -266,12 +401,14 @@ class _DriverDashboardState extends State<DriverDashboard> {
                                     alignment: Alignment.center,
                                     child: Text(
                                       trackingLocation ? "STOP" : "START",
-                                      style: TextStyle(color: Colors.white),
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
                                     ),
                                     decoration: BoxDecoration(
                                       color: trackingLocation
-                                          ? Colors.green
-                                          : Colors.red,
+                                          ? Colors.red
+                                          : Colors.green,
                                       shape: BoxShape.circle,
                                     ),
                                   ),
@@ -298,14 +435,20 @@ class _DriverDashboardState extends State<DriverDashboard> {
                   ],
                 ),
               ),
-              TextButton(
+              FlatButton(
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)
+                ),
+                
                   onPressed: () async {
                     logOut(context);
                   },
                   child: Text(
                     "Logout",
                     style: TextStyle(color: Colors.red),
-                  )),
+                  )
+                  ),
             ],
           ),
         ),
